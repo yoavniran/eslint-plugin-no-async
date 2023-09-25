@@ -12,16 +12,18 @@
     "keywords": [
         "eslint",
         "eslintplugin",
-        "eslint-plugin"
+        "eslint-plugin",
+        "async",
+        "generator"
     ],
     "scripts": {
         "test": "node ./test"
     },
     "peerDependencies": {
-        "eslint": "^6 || ^7"
+        "eslint": "^6 || ^7 || ^8"
     },
     "devDependencies": {
-        "eslint": "^7.10.0",
-        "eslint-plugin-testing-library": "^3.9.0"
+        "eslint": "^8.50.0",
+        "eslint-plugin-testing-library": "^6.0.2"
     }
 }
