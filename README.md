@@ -1,3 +1,13 @@
+<p align="center">
+    <a href="LICENSE.md">
+       <img src="https://img.shields.io/github/license/yoavniran/eslint-plugin-no-async?color=blue&style=plastic" alt="MIT License"/>
+    </a>
+    <a href="https://badge.fury.io/js/eslint-plugin-no-async">
+        <img src="https://badge.fury.io/js/eslint-plugin-no-async.svg" alt="npm version" height="20">
+    </a>
+</p>
+
+
 # eslint-plugin-no-async
 
 Disallows code that will transpile into use of regenerator.
