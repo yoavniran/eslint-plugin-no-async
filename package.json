@@ -5,7 +5,7 @@
     "main": "lib/index.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/yoavniran/eslint-plugin-no-async"
+        "url": "git+https://github.com/yoavniran/eslint-plugin-no-async.git"
     },
     "author": "yoav niran (https://github.com/yoavniran)",
     "license": "MIT",
