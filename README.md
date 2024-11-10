@@ -17,6 +17,9 @@ If you don't want async/await and generators to be transpiled into use of [regen
 ## Installation
 
 ```shell
+#PNPM: 
+  $ pnpm add -D eslint-plugin-no-async
+
 #Yarn:
   $ yarn add --dev eslint-plugin-no-async
 
@@ -24,7 +27,29 @@ If you don't want async/await and generators to be transpiled into use of [regen
   $ npm i --save-dev eslint-plugin-no-async
 ``` 
 
-In .eslintrc(.js):
+In Flat Configuration (9+):
+
+```javascript
+    import noAsync from "eslint-plugin-no-async";
+   
+    export default [{
+        "plugins": {
+            "no-async": noAsync,
+        },
+        "rules": {
+            ...js.configs.recommended.rules,
+            "no-async/no-async": [2],
+
+            //with allowGenerators:
+            // {
+            //     "no-async/no-async": [2, true]
+            // }
+        }
+    }];
+```
+
+
+In .eslintrc(.js) (Before 9):
 
 ```eslint
 {

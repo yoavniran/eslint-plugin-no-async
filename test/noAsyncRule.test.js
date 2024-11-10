@@ -1,7 +1,7 @@
 const { RuleTester } = require("eslint");
 const noAsyncRule = require("../lib/rules/no-async");
 
-const ruleTester = new RuleTester({ parserOptions: { ecmaVersion: 8 } });
+const ruleTester = new RuleTester({});
 
 ruleTester.run("my-rule", noAsyncRule, {
     valid: [
