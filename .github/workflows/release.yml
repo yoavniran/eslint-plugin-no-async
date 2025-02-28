@@ -47,6 +47,9 @@ jobs:
 
             - run: pnpm test
 
+            - run: |
+                git status
+
             - name: Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
