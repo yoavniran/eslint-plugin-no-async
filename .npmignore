@@ -1,11 +1,13 @@
 .idea/
 .vscode/
+.github/
 src/
 *.story.js
 *.stories.js
 stories/
 *.test.js
 tests/
+test/
 mocks/
 *.log
 jest*

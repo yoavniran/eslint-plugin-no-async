@@ -45,7 +45,7 @@ jobs:
 
             - uses: ./.github/actions/setup
 
-            - run: pnpm build
+            - run: pnpm test
 
             - name: Release
               env:
