@@ -74,6 +74,10 @@ async function myFunction() {}
 const myArrowFunction = async () => {}
 
 function * myGeneratorFunction() { }
+
+class MyClass {
+    async myFunction() { }
+}
 ```
 
 All of the examples in the code above will result in the use of regenerator after babel transpiled it.

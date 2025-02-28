@@ -12,6 +12,12 @@ ruleTester.run("my-rule", noAsyncRule, {
             code: `function * testGen() { }`,
             options: [true],
         },
+        {
+            code: `export class Test { test () { } }`,
+        },
+        {
+            code: `function test() { function test() {} }`
+        }
     ],
     invalid: [
         {
@@ -46,5 +52,19 @@ ruleTester.run("my-rule", noAsyncRule, {
                 { messageId: noAsyncRule.MESSAGES.NOT_ALLOWED_GEN },
             ],
         },
+        {
+            code: `export class Test { async test () { } }`,
+            options: [true],
+            errors: [
+                { messageId: noAsyncRule.MESSAGES.NOT_ALLOWED },
+            ]
+        },
+        {
+            code:`function test() { async function test() {} }`,
+            options: [true],
+            errors: [
+                { messageId: noAsyncRule.MESSAGES.NOT_ALLOWED },
+            ]
+        }
     ],
 });
