@@ -25,5 +25,8 @@
     "devDependencies": {
         "eslint": "^9.14.0",
         "eslint-plugin-testing-library": "^6.4.0"
+    },
+    "dependencies": {
+        "release-it": "^18.1.2"
     }
 }
