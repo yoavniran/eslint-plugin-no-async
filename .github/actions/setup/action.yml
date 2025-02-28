@@ -14,5 +14,5 @@ runs:
               cache: "pnpm"
               cache-dependency-path: "./pnpm-lock.yaml"
 
-        - run: pnpm install
+        - run: pnpm install --frozen-lockfile
           shell: bash
